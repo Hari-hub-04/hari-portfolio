@@ -9,13 +9,22 @@ function renderProjectVideo(video, projectTitle, index) {
     return (
       <iframe
         className="aspect-video w-full"
-        src={video.src}
+        src={video.src.replace('watch?v=', 'embed/')}
         title={video.title || `${projectTitle} demo video ${index + 1}`}
         loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       />
+    )
+  }
+
+  if (video.type === 'local') {
+    return (
+      <video className="aspect-video w-full" controls preload="metadata">
+        <source src={video.src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     )
   }
 

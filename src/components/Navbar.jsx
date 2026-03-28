@@ -15,17 +15,14 @@ function Navbar() {
           DevPortfolio
         </a>
 
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={() => setOpen((prev) => !prev)}
-            className="rounded-lg border border-slate-700 p-2 text-slate-200 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-700 hover:shadow-xl md:hidden"
-            aria-label="Toggle menu"
-          >
-            {open ? <X size={18} /> : <Menu size={18} />}
-          </button>
-          <ThemeToggle />
-        </div>
+        <button
+          type="button"
+          onClick={() => setOpen((prev) => !prev)}
+          className="rounded-lg border border-slate-700 p-2 text-slate-200 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-700 hover:shadow-xl md:hidden"
+          aria-label="Toggle menu"
+        >
+          {open ? <X size={18} /> : <Menu size={18} />}
+        </button>
 
         <div className="hidden items-center gap-8 md:flex">
           <ul className="flex items-center gap-8">
@@ -40,7 +37,6 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          <ThemeToggle />
         </div>
       </nav>
 

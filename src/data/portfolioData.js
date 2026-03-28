@@ -7,7 +7,25 @@ export const navLinks = [
   { name: 'Contact', href: '#contact' },
 ]
 
-export const skillGroups = []
+export const skillGroups = [
+  {
+    title: 'Frontend',
+    icon: Github,
+    items: [
+      { name: 'React', icon: Github },
+      { name: 'Tailwind CSS', icon: Github },
+      { name: 'Vite', icon: Github },
+    ],
+  },
+  {
+    title: 'Backend',
+    icon: Github,
+    items: [
+      { name: 'Node.js', icon: Github },
+      { name: 'JavaScript', icon: Github },
+    ],
+  }
+]
 
 export const softwareProjects = [
   {
@@ -49,15 +67,15 @@ export const hardwareProjects = [
         description:
           'First version showcased at the VISAI competition. A flame sensor and W1209 controller monitor risk conditions, and the Arduino Nano triggers a submersible pump to spray extinguishing liquid through a nozzle while GSM SIM800L sends alerts.',
         images: [
-          '/src/assets/IMG-20240512-WA0052.jpg',
-          '/src/assets/IMG-20240514-WA0016.jpg',
-          '/src/assets/IMG-20240515-WA0043.jpg',
-          '/src/assets/IMG-20240515-WA0044.jpg',
+          '/assets/IMG-20240512-WA0052.jpg',
+          '/assets/IMG-20240514-WA0016.jpg',
+          '/assets/IMG-20240515-WA0043.jpg',
+          '/assets/IMG-20240515-WA0044.jpg',
         ],
         videos: [
           {
-            type: 'youtube',
-            src: 'src/assets/VID_20240221_085759.mp4',
+            type: 'local',
+            src: '/assets/VID_20240221_085759.mp4',
             title: 'Competition Prototype Demo',
           }
         ],
@@ -91,13 +109,13 @@ export const hardwareProjects = [
       '/projects/hardware-1-2.svg',
       '/projects/hardware-1-3.svg',
     ],
-    videos: [
-      {
-        type: 'youtube',
-        src: 'https://www.youtube.com/embed/aqz-KE-bpKQ',
-        title: 'Rover Demo',
-      },
-    ],
+        videos: [
+          {
+            type: 'youtube',
+            src: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
+            title: 'Rover Demo',
+          },
+        ],
     badges: ['National Prize Winner', 'Patent Filed'],
   },
   {
