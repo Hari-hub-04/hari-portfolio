@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react'
+yimport { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { navLinks } from '../data/portfolioData'
 
@@ -64,3 +64,4 @@ function Navbar() {
 }
 
 export default Navbar
+
