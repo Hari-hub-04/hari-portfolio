@@ -27,29 +27,31 @@ function Hero() {
               View About <ArrowRight size={18} />
             </a>
             <a
-              href="#contact"
+              href="mailto:harikumarat04@gmail.com"
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-800/70 px-6 py-3 font-semibold text-slate-100 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-slate-700"
             >
               Contact Me <Mail size={18} />
             </a>
+
           </div>
         </Reveal>
+
 
         <Reveal delay={120}>
           <div className="glass-card p-8 lg:p-10">
             <div className="inline-flex animate-float items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-cyan-300">
               Open For Opportunities
             </div>
-            <h3 className="mt-6 text-2xl font-semibold text-white">Building polished digital products.</h3>
+            <h3 className="mt-6 text-2xl font-semibold text-white">Web App Developer</h3>
             <p className="mt-3 text-slate-300">
-              Frontend engineering, API architecture, and deployment automation for
-              modern SaaS and product teams.
+              Building responsive websites and web apps with HTML, CSS, JavaScript, React, and Tailwind. 
+              Open to junior roles, freelance gigs, and collaborative projects!
             </p>
             <a
-              href="#about"
+              href="#contact"
               className="mt-6 inline-flex items-center gap-2 rounded-2xl border border-slate-600 px-5 py-3 text-sm font-semibold text-slate-200 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-700 hover:shadow-xl"
             >
-              Resume Snapshot <Download size={16} />
+              Let&apos;s Collaborate <ArrowRight size={16} />
             </a>
           </div>
         </Reveal>

@@ -118,9 +118,9 @@ export const hardwareProjects = [
 ]
 
 export const stats = [
-  { label: 'Years Experience', value: '3+' },
-  { label: 'Projects Delivered', value: '25+' },
-  { label: 'Tech Stack Breadth', value: '12+' },
+  { label: 'Learning Web Dev', value: '1+ Year' },
+  { label: 'Personal Projects', value: '5+' },
+  { label: 'Core Web Skills', value: 'HTML/CSS/JS/React' },
 ]
 
 export const contacts = [
