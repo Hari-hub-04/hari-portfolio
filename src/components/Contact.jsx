@@ -10,7 +10,7 @@ function Contact() {
         <SectionTitle
           eyebrow="Contact"
           title="Let&apos;s Build Something Great"
-          description="Open to full-time roles, freelance projects, and product collaborations."
+          description="I’m open to entry-level roles, internships, and collaborative projects where I can apply my skills and continue growing as a developer."
         />
 
         <Reveal>
@@ -20,7 +20,7 @@ function Contact() {
                 <a
                   key={item.label}
                   href={item.href}
-                  target={item.label === 'Email' ? undefined : '_blank'}
+                  target={item.label === 'Email' ? '_self' : '_blank'}
                   rel={item.label === 'Email' ? undefined : 'noreferrer'}
                   className="rounded-2xl border border-slate-700 bg-slate-900/60 p-5 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-700 hover:shadow-xl"
                 >
@@ -33,6 +33,7 @@ function Contact() {
 
             <a
               href="mailto:harikumarat04@gmail.com"
+              target="_self"
               className="mt-8 inline-flex items-center gap-2 rounded-2xl bg-indigo-500 px-6 py-3 font-semibold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-indigo-400 hover:shadow-xl"
             >
               Contact Me <Send size={17} />

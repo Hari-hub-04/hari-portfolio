@@ -53,7 +53,7 @@ function StageMediaCard({ stage, projectTitle }) {
       <p className="mt-3 text-sm text-slate-300 md:text-base">{stage.description}</p>
 
       <div className="mt-5">
-        <div className="relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/80">
+        <div className="relative overflow-hidden rounded-2xl border border-slate-700">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${activeImage * 100}%)` }}
@@ -63,7 +63,7 @@ function StageMediaCard({ stage, projectTitle }) {
                 key={`${stage.title}-${index}`}
                 src={img}
                 alt={`${stage.title} ${index + 1}`}
-                className="h-56 w-full flex-shrink-0 object-cover"
+                className="h-60 w-full flex-shrink-0 object-cover"
               />
             ))}
           </div>
@@ -131,16 +131,17 @@ function HardwareProjectCard({ project, delay }) {
     project.stages ||
     [
       {
-        title: `${project.title} - Project Build`,
-        description: project.description,
+        title: '',
+        description: '',
         images: project.images || [],
         videos: project.videos || [],
       },
     ]
 
   return (
-    <Reveal delay={delay} className={project.featured ? 'lg:col-span-2' : ''}>
+    <Reveal delay={delay}>
       <article className="overflow-hidden rounded-2xl border border-slate-700/60 bg-slate-800/50 p-6 shadow-lg backdrop-blur-xl transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-xl md:p-7">
+
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
             <div className="mb-3 flex flex-wrap gap-2">
@@ -178,7 +179,7 @@ function HardwareProjectCard({ project, delay }) {
           </div>
         )}
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2 md:items-start">
+        <div className="mt-8">
           {stages.map((stage) => (
             <StageMediaCard key={`${project.title}-${stage.title}`} stage={stage} projectTitle={project.title} />
           ))}

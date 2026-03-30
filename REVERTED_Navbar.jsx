@@ -1,4 +1,4 @@
-yimport { Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { navLinks } from '../data/portfolioData'
 

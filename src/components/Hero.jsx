@@ -28,6 +28,7 @@ function Hero() {
             </a>
             <a
               href="mailto:harikumarat04@gmail.com"
+              target="_self"
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-800/70 px-6 py-3 font-semibold text-slate-100 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-slate-700"
             >
               Contact Me <Mail size={18} />
