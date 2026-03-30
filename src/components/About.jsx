@@ -9,21 +9,19 @@ function About() {
         <SectionTitle
           eyebrow="About Me"
           title="Developer Story"
-          description="I enjoy turning complex ideas into clear interfaces and reliable systems that users trust."
+          description="I enjoy transforming complex ideas into simple digital experiences. My goal is to build clean interfaces and reliable systems that make technology easier and more useful for people."
         />
 
         <Reveal>
           <div className="grid gap-6 lg:grid-cols-[1.2fr_.8fr]">
             <article className="glass-card p-8">
-              <h3 className="text-2xl font-semibold text-white">From haidea to shipped product.</h3>
+              <h3 className="text-2xl font-semibold text-white">From Snippets to Systems</h3>
               <p className="mt-4 text-slate-300">
-                I work across frontend and backend to deliver complete, production-grade
-                applications. My approach combines scalable architecture, thoughtful
-                interactions, and maintainable code.
+                From simple code snippets to building projects like YHMW, my journey as a developer has been driven by curiosity and hands-on learning. I enjoy breaking down complex ideas, writing clean logic, and turning concepts into practical, working systems.
               </p>
+              <br />
               <p className="mt-4 text-slate-300">
-                I primarily build with React, TypeScript, Java, Spring Boot, Node.js,
-                PostgreSQL, and cloud-native tooling for CI/CD and deployment.
+                I specialize in frontend development, building responsive and interactive web applications using HTML, CSS, JavaScript, and React. I focus on creating clean interfaces and user-friendly experiences.
               </p>
             </article>
 

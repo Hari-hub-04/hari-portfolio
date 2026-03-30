@@ -1,17 +1,7 @@
-# Portfolio Fixes & Rollback
+# ScrollToTop Component Implementation
 
-## Current Status
-- [x] Rollback theme changes (causing black screen)
-- [ ] Fix asset paths in portfolioData.js
-- [ ] Add Skills section to App
-- [ ] Test functionality
-
-## Steps Completed
-1. Created TODO.md with rollback plan
-2. Rolling back App.jsx to pre-theme version
-3. Removing ThemeContext.jsx and ThemeToggle.jsx
-4. Updating Navbar.jsx (remove toggle)
-5. Fixing portfolioData.js paths
-
-Next: Test after rollback
-
+## Steps:
+- [x] 1. Create src/components/ScrollToTop.jsx
+- [x] 2. Edit src/App.jsx to import and add <ScrollToTop />
+- [ ] 3. Test functionality (run `npm run dev`, scroll test)
+- [ ] 4. Complete task

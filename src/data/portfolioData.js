@@ -1,5 +1,13 @@
-import { Feather, Github, LayoutPanelTop } from 'lucide-react'
-
+import { Feather, Github, LayoutPanelTop, Microchip, Wifi, Zap, Code2 } from 'lucide-react'
+import img1 from "../assets/1.jpg"
+import img2 from "../assets/2.jpg"
+import img3 from "../assets/3.jpg"
+import img4 from "../assets/4.jpg"
+import img5 from "../assets/5.jpg"
+import img6 from "../assets/6.jpg"
+import img7 from "../assets/7.jpg"
+import img8 from "../assets/8.png"
+import img9 from "../assets/9.png"
 export const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
@@ -10,19 +18,32 @@ export const navLinks = [
 export const skillGroups = [
   {
     title: 'Frontend',
-    icon: Github,
+    icon: Code2,
     items: [
-      { name: 'React', icon: Github },
-      { name: 'Tailwind CSS', icon: Github },
-      { name: 'Vite', icon: Github },
+      { name: 'HTML', icon: Code2 },
+      { name: 'CSS', icon: Code2 },
+      { name: 'React', icon: Code2 },
+      
     ],
   },
   {
     title: 'Backend',
-    icon: Github,
+    icon: LayoutPanelTop,
     items: [
-      { name: 'Node.js', icon: Github },
       { name: 'JavaScript', icon: Github },
+      { name: 'Node.js', icon: Github },
+      { name: 'SQL', icon: Github },
+      { name: 'Java' , icon: Github },
+    ],
+  },
+  {
+    title: 'IoT & Embedded',
+    icon: Microchip,
+    items: [
+      { name: 'Arduino', icon: Zap },
+      { name: 'ESP32 & ESP8266', icon: Wifi },
+      { name: 'Sensors (Ultrasonic, IR, PIR, Flame)', icon: Microchip },
+      { name: 'Embedded C', icon: Github },
     ],
   }
 ]
@@ -45,100 +66,66 @@ export const hardwareProjects = [
   {
     title: 'Next Gen Fire Safety',
     featured: true,
-    role: 'Hardware Developer and System Designer',
     description:
       'Next Gen Fire Safety is an intelligent fire detection and suppression system designed for electric vehicles. It detects flame or abnormal temperature and automatically activates suppression to control fire quickly.',
     technologies: [
       'Arduino Nano',
       'Flame Sensor',
       'W1209 Temperature Controller',
+      'MQ5 Sensor',
+      'PIR Sensor',
       'Submersible Pump',
       'Nozzle System',
       'GSM SIM800L Module',
     ],
     badges: [
-      'National Level Competition Winner',
-      '?30,000 Project Sponsorship',
+      'International Level Competition Winner',
       'Patent Filed',
+      '₹30,000 Project Sponsorship',
     ],
-    stages: [
-      {
-        title: 'Initial Prototype - Competition Model',
-        description:
-          'First version showcased at the VISAI competition. A flame sensor and W1209 controller monitor risk conditions, and the Arduino Nano triggers a submersible pump to spray extinguishing liquid through a nozzle while GSM SIM800L sends alerts.',
-        images: [
-          '/assets/IMG-20240512-WA0052.jpg',
-          '/assets/IMG-20240514-WA0016.jpg',
-          '/assets/IMG-20240515-WA0043.jpg',
-          '/assets/IMG-20240515-WA0044.jpg',
-        ],
-        videos: [
-          {
-            type: 'local',
-            src: '/assets/VID_20240221_085759.mp4',
-            title: 'Competition Prototype Demo',
-          }
-        ],
-      },
-      {
-        title: 'Product Prototype - Improved Model',
-        description:
-          'After receiving ?30,000 sponsorship, an upgraded product model was built with improved structure and 3D printed design for better integration, reliability, and physical durability over the initial prototype.',
-        images: [
-          '/projects/next-gen-stage2-1.svg',
-          '/projects/next-gen-stage2-2.svg',
-          '/projects/next-gen-stage2-3.svg',
-        ],
-        videos: [
-          {
-            type: 'html5',
-            src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
-            title: 'Improved Model Demo',
-          },
-        ],
-      },
+    images: [
+      img1,
+      img2,
+      img3,
+      img4,
+      img5,
+
     ],
   },
   {
     title: 'Smart Agricultural Rover',
+     featured: true,
     description:
-      'National-level competition project focused on precision farm monitoring and automated irrigation triggers based on sensor input.',
-    technologies: ['IoT Sensors', 'Embedded C', 'Arduino', 'Motor Driver'],
+      'An autonomous waste collection prototype designed to demonstrate smart city waste management. The truck follows a guided path, detects obstacles, identifies collection points, and uses a robotic arm to pick and store garbage automatically while monitoring bin capacity.',
+    technologies: ['TCS3200 Color Sensor',
+      'Load Cell Sensor',
+      'Embedded C',
+      'Arduino AtMega',
+      'Robotic Arm(4 DoF)',
+      'UltraSonic Sensor',
+      'LED Display',
+      'L298 Motor Driver',
+    ],
+      
+
     images: [
-      '/projects/hardware-1-1.svg',
-      '/projects/hardware-1-2.svg',
-      '/projects/hardware-1-3.svg',
+      img9,
+      img7,
+      img8,
+      img6,
     ],
-        videos: [
-          {
-            type: 'youtube',
-            src: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
-            title: 'Rover Demo',
-          },
-        ],
-    badges: ['National Prize Winner', 'Patent Filed'],
-  },
-  {
-    title: 'Intelligent Waste Segregation Unit',
-    description:
-      'Prototype machine that identifies dry and wet waste categories through sensor logic and directs items to separate bins automatically.',
-    technologies: ['Sensor Module', 'Controller Board', 'Relay Unit'],
-    images: ['/projects/hardware-2-1.svg', '/projects/hardware-2-2.svg'],
-    videos: [
-      {
-        type: 'html5',
-        src: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
-        title: 'Waste Unit Demo',
-      },
+    badges: [
+      'International Level Competition Runner',
+      'Patent Ongoing',
     ],
-    badges: [],
   },
+
 ]
 
 export const stats = [
-  { label: 'Learning Web Dev', value: '1+ Year' },
-  { label: 'Personal Projects', value: '5+' },
-  { label: 'Core Web Skills', value: 'HTML/CSS/JS/React' },
+{ label: 'Specialization', value: 'Frontend Development' },
+{ label: 'Tech Stack', value: 'HTML / CSS / JS / React' },
+{ label: 'Focus', value: 'Responsive UI & Clean Design' },
 ]
 
 export const contacts = [
